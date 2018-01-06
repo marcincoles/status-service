@@ -21,19 +21,17 @@ manually this time for the learning experience)
 ### Service Status API
 1. GET /services
     * returns JSON:
-    '''json
-    {
-     "services": ["status-service","ip-service","time-service"]
-    }
-    '''
+    
+        {
+            "services": ["status-service","ip-service","time-service"]
+        }
 
 2. GET /services/<service-name>
     * return JSON
-    '''javascript
-    {
-     "service" : "<service-name",
-     "status": "up" | "down",
-     "datetime": "datetime-string"
-    }
-    '''
+
+        {
+            "service" : "<service-name",
+            "status": "up" | "down",
+            "datetime": "datetime-string"
+        }
 Error condition, if <service-name> doesn't exist, return a 404 error.
