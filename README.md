@@ -28,12 +28,12 @@ manually this time for the learning experience)
         }
 ```
 
-2. GET /services/<service-name>
+2. GET /services/service-name
     * return JSON
 
 ```
         {
-            "service" : "<service-name",
+            "service" : "service-name",
             "status": "up" | "down",
             "datetime": "datetime-string"
         }
