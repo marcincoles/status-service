@@ -22,16 +22,21 @@ manually this time for the learning experience)
 1. GET /services
     * returns JSON:
     
+```
         {
             "services": ["status-service","ip-service","time-service"]
         }
+```
 
 2. GET /services/<service-name>
     * return JSON
 
+```
         {
             "service" : "<service-name",
             "status": "up" | "down",
             "datetime": "datetime-string"
         }
+```
+
 Error condition, if <service-name> doesn't exist, return a 404 error.
