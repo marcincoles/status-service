@@ -40,3 +40,8 @@ manually this time for the learning experience)
 ```
 
 Error condition, if <service-name> doesn't exist, return a 404 error.
+
+### Service Status design
+Since I'll use a TDD approach, and start with unit tests obviously, I'll structure the resource to use at least one function to check itself (eg making sure there's no runtime exceptions) as that's about the only way we can reasonably have a service that reports that it's down!
+So we'll have a function called isUp() within the resource, and unless it raises an exception, it will return as being Up.
+I'll have to work out how to test using mocks or whatever on the actual API.

@@ -1,0 +1,4 @@
+{
+  "statusservice/test_basic.py::test_isUp_returns_true": true,
+  "tests/test_basic.py::test_isUp_returns_true": true
+}
